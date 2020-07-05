@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
     }
-//este es el proyecto limpio para el examen?, efectivamente
+//este es el proyecto limpio para el examen?, efectivamente este es el proyecto
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
