@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorText">#0307DA</color>
+    <color name="Usuario_Profile_Fondo">#033A0B</color>
+    <color name="Usuario_Profile_Fondo2">#FFFFFF</color>
+    <color name="Usuario_Profile_FondoTool">#087118</color>
+    <color name="Usuarios_Profile_ColorTextoNombre">#FFFFFF</color>
+    <color name="Usuarios_Profile_ColorTextoDesc">#021E06</color>
+    <color name="Post_Fondo">#FDFFFE</color>
+    <color name="Post_Detalle">#DBE6DC</color>
 </resources>

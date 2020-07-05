@@ -9,4 +9,38 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Login_txtUss">"Ingrese Usuario"</string>
+    <string name="Login_txtPss">"Ingrese Contraseña"</string>
+    <string name="btn_login_iniciarsesion">Iniciar Sesión</string>
+    <string name="login_registro">Registrarse</string>
+    <string name="Registro_Titulo">Registro de Usuario</string>
+    <string name="Registro_txtNombre">Nombre</string>
+    <string name="Registro_txtApellido">Apellido</string>
+    <string name="Registro_txtDni">DNI</string>
+    <string name="Registro_txtDireccion">Dirección</string>
+    <string name="Registro_txtUsuario">Usuario</string>
+    <string name="Registro_txtContrasena">Contraseña</string>
+    <string name="Login_Titulo">Inicio de Sesión</string>
+    <string name="Registro_btnRegistro">Registrar</string>
+    <string name="Editar_Titulo">Editar Usuario</string>
+    <string name="Editar_btnRegistro">Editar</string>
+    <string name="item_detail_nombre_usuario">Nombre</string>
+    <string name="item_detail_nombre_usuario_example">Usuario</string>
+    <string name="item_detail_apellido_usuario">Apellido</string>
+    <string name="item_detail_direccion_usuario">Direccion</string>
+    <string name="item_detail_dni_usuario">DNI</string>
+    <string name="Usuarios_Profile_MeGusta">Me Gusta</string>
+    <string name="Usuarios_Profile_Subidas">Posts</string>
+    <string name="Val_Usuarios_Profile_Historias">Historias</string>
+    <string name="Val_Usuarios_Profile_Amigos">Amigos</string>
 </resources>

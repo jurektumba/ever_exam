@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrmUserProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Usuario_Profile_Fondo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/Ver_Profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:text="Dave Mustaine"
+                    android:textColor="@color/Usuarios_Profile_ColorTextoNombre" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Usuario_Profile_Fondo2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/Usuarios_Profile_CardDesc"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/Usuarios_Profile_MeGusta"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+
+                        <TextView
+                            android:id="@+id/txt_Usuario_Ver_NroLikes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="586"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Lyt_Usuario_VerPost"
+                        android:layout_width="@dimen/Usuarios_Profile_CardDesc"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/Usuarios_Profile_Subidas"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+
+                        <TextView
+                            android:id="@+id/txt_Usuario_Ver_Subidas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="419"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/Usuarios_Profile_CardDesc"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/Val_Usuarios_Profile_Historias"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+
+                        <TextView
+                            android:id="@+id/txt_Usuario_Ver_Historias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="102"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/Usuarios_Profile_CardDesc"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/Val_Usuarios_Profile_Amigos"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+
+                        <TextView
+                            android:id="@+id/txt_Usuario_Ver_Amigos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="898"
+                            android:textColor="@color/Usuarios_Profile_ColorTextoDesc" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="320dp"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detailUsuarioLong"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txt_Usuario_Ver_YearsOld"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="57 Years Old" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detailUsuarioLong"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txt_Usuario_Ver_Mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="dave.mustain@gmail.com" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detailUsuarioLong"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txt_Usuario_Ver_Origin_City"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="New York, USA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/detailUsuarioLong"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/txt_Usuario_Ver_Job"
+                        android:layout_width="wrap_content"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Musician" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
