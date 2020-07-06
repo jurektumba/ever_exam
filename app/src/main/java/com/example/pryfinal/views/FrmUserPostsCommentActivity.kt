@@ -1,7 +1,8 @@
-package com.example.pryfinal
+package com.example.pryfinal.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.pryfinal.R
 
 class FrmUserPostsCommentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

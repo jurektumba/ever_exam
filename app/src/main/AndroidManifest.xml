@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FrmUserFriendsActivity"></activity>
-        <activity android:name=".FrmUserPostsCommentActivity" />
-        <activity android:name=".FrmUserPostsActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".views.FrmUserFriendsActivity"></activity>
+        <activity android:name=".views.FrmUserPostsCommentActivity" />
+        <activity android:name=".views.FrmUserPostsActivity" />
+        <activity android:name=".views.MainActivity" />
         <activity
-            android:name=".FrmUserProfileActivity"
+            android:name=".views.FrmUserProfileActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
