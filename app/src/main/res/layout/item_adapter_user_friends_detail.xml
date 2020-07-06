@@ -10,17 +10,19 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/LongitudFormulariosArriba"
             android:layout_marginBottom="@dimen/LongitudFormulariosAbajo"
             android:orientation="horizontal">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
+                android:layout_width="179dp"
                 android:layout_height="88dp"
                 android:layout_gravity="center"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
                 tools:srcCompat="@tools:sample/avatars" />
         </LinearLayout>
         <LinearLayout

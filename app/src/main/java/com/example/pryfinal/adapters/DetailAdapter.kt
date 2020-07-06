@@ -1,7 +1,6 @@
 package com.example.pryfinal.adapters
 
 import androidx.recyclerview.widget.RecyclerView
-import com.example.pryfinal.models.FeedPosts
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,9 +27,12 @@ class DetailAdapter(private val data: ArrayList<FeedDetail>) :  RecyclerView.Ada
         holder.itemView.textView.text = feed.descripcion
         Picasso.get()
             .load(feed.imagen)
-            .resize(100,100)
+            .resize(130,130)
             .centerCrop()
             .into(holder.itemView.imageView)
+        holder.itemView.imageView.setOnClickListener{View ->
+            Toast.makeText(View.context, "Llamando a "+feed.number, Toast.LENGTH_SHORT).show()
+        }
     }
 
 
@@ -40,7 +42,7 @@ class DetailAdapter(private val data: ArrayList<FeedDetail>) :  RecyclerView.Ada
 
     class FeedHolder(v: View): RecyclerView.ViewHolder(v), View.OnClickListener {
         private var view: View = v
-        private var feed : FeedPosts? = null
+        private var feed : FeedDetail? = null
 
         init {
             v.setOnClickListener(this)

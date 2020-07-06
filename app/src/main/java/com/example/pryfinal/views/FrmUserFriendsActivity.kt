@@ -9,6 +9,7 @@ import com.example.pryfinal.adapters.DetailAdapter
 import com.example.pryfinal.adapters.UserPostsAdapter
 import com.example.pryfinal.models.FeedDetail
 import com.example.pryfinal.network.Repository
+import kotlinx.android.synthetic.main.activity_frm_user_friends.*
 import kotlinx.android.synthetic.main.activity_frm_user_posts.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,7 +19,7 @@ import retrofit2.HttpException
 
 class FrmUserFriendsActivity : AppCompatActivity() {
     private lateinit var linearLayoutManager: LinearLayoutManager
-    private lateinit var adapter: UserPostsAdapter
+    private lateinit var adapter: DetailAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_frm_user_friends)
@@ -39,13 +40,14 @@ class FrmUserFriendsActivity : AppCompatActivity() {
                             for (item in lista ){
                                 val desc = item.username
                                 val imag = item.image
-                                val it: FeedDetail = FeedDetail(imag,desc)
+                                val numero = item.phone
+                                val it: FeedDetail = FeedDetail(imag,desc, numero)
                                 feedList.add(it)
                             }
-                            //adapter = DetailAdapter(feedList)
+                            adapter = DetailAdapter(feedList)
                             linearLayoutManager = LinearLayoutManager(this@FrmUserFriendsActivity)
-                            recyclerUserPosts.layoutManager= linearLayoutManager
-                            recyclerUserPosts.adapter = adapter
+                            recyclerDetailUser.layoutManager= linearLayoutManager
+                            recyclerDetailUser.adapter = adapter
                         }
                         Toast.makeText(
                             this@FrmUserFriendsActivity,

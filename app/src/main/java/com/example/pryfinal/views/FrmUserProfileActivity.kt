@@ -26,6 +26,10 @@ class FrmUserProfileActivity : AppCompatActivity() {
             val intent = Intent(this, FrmUserPostsActivity::class.java)
             startActivity(intent)
         }
+        Lyt_Usuario_Friends.setOnClickListener{
+            val intent = Intent(this, FrmUserFriendsActivity::class.java)
+            startActivity(intent)
+        }
         callService()
     }
     private fun callService() {
